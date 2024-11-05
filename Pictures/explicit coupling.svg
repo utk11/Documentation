@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="152.97018mm"
+   height="120.09414mm"
+   viewBox="0 0 152.97018 120.09414"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="explicit coupling.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.73827583"
+     inkscape:cx="289.18731"
+     inkscape:cy="314.24569"
+     inkscape:window-width="1440"
+     inkscape:window-height="830"
+     inkscape:window-x="-6"
+     inkscape:window-y="-6"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="marker21"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Rounded arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="m -0.21114562,-4.1055728 6.42229122,3.21114561 a 1,1 90 0 1 0,1.78885438 L -0.21114562,4.1055728 A 1.236068,1.236068 31.717474 0 1 -2,3 v -6 a 1.236068,1.236068 148.28253 0 1 1.78885438,-1.1055728 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path21" />
+    </marker>
+    <rect
+       x="73.143394"
+       y="222.13921"
+       width="314.2457"
+       height="319.66373"
+       id="rect6" />
+    <marker
+       style="overflow:visible"
+       id="marker5"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Rounded arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="m -0.21114562,-4.1055728 6.42229122,3.21114561 a 1,1 90 0 1 0,1.78885438 L -0.21114562,4.1055728 A 1.236068,1.236068 31.717474 0 1 -2,3 v -6 a 1.236068,1.236068 148.28253 0 1 1.78885438,-1.1055728 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path5" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="RoundedArrow"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Rounded arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="m -0.21114562,-4.1055728 6.42229122,3.21114561 a 1,1 90 0 1 0,1.78885438 L -0.21114562,4.1055728 A 1.236068,1.236068 31.717474 0 1 -2,3 v -6 a 1.236068,1.236068 148.28253 0 1 1.78885438,-1.1055728 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path8" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="RoundedArrow-5"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Rounded arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="m -0.21114562,-4.1055728 6.42229122,3.21114561 a 1,1 90 0 1 0,1.78885438 L -0.21114562,4.1055728 A 1.236068,1.236068 31.717474 0 1 -2,3 v -6 a 1.236068,1.236068 148.28253 0 1 1.78885438,-1.1055728 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path8-7" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker5-6"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Rounded arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="m -0.21114562,-4.1055728 6.42229122,3.21114561 a 1,1 90 0 1 0,1.78885438 L -0.21114562,4.1055728 A 1.236068,1.236068 31.717474 0 1 -2,3 v -6 a 1.236068,1.236068 148.28253 0 1 1.78885438,-1.1055728 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path5-1" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-14.158626,-80.848402)">
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:7.51829px;font-family:'3ds';-inkscape-font-specification:'3ds Light';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;stroke:#000000;stroke-width:0.377521;paint-order:fill markers stroke"
+       x="55.648396"
+       y="87.200783"
+       id="text2"
+       transform="scale(0.99533397,1.0046879)"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         style="stroke-width:0.377521"
+         x="55.648396"
+         y="87.200783">Explict Co-Simulation</tspan></text>
+    <rect
+       style="fill:#ffccaa;stroke:#000000;stroke-width:0.377521;paint-order:fill markers stroke"
+       id="rect1"
+       width="27.272837"
+       height="18.35276"
+       x="31.457043"
+       y="101.66447"
+       ry="4.9329505" />
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:7.51829px;font-family:'3ds';-inkscape-font-specification:'3ds Light';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;stroke:#000000;stroke-width:0.377521;paint-order:fill markers stroke"
+       x="16.705261"
+       y="108.16066"
+       id="text3"
+       transform="scale(0.99533397,1.0046879)"><tspan
+         sodipodi:role="line"
+         id="tspan3"
+         style="stroke-width:0.377521"
+         x="16.705261"
+         y="108.16066">t0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:7.51829px;font-family:'3ds';-inkscape-font-specification:'3ds Light';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;stroke:#000000;stroke-width:0.377521;paint-order:fill markers stroke"
+       x="33.261768"
+       y="111.84313"
+       id="text4"
+       transform="scale(0.99533397,1.0046879)"><tspan
+         sodipodi:role="line"
+         id="tspan4"
+         style="stroke-width:0.377521"
+         x="33.261768"
+         y="111.84313">Code A</tspan></text>
+    <rect
+       style="fill:#c8c4b7;stroke:#000000;stroke-width:0.377521;paint-order:fill markers stroke"
+       id="rect1-8"
+       width="27.272837"
+       height="18.35276"
+       x="131.75233"
+       y="101.66447"
+       ry="4.9329505" />
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:7.51829px;font-family:'3ds';-inkscape-font-specification:'3ds Light';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;stroke:#000000;stroke-width:0.377521;paint-order:fill markers stroke"
+       x="134.32524"
+       y="112.04235"
+       id="text4-22"
+       transform="scale(0.99533397,1.0046879)"><tspan
+         sodipodi:role="line"
+         id="tspan4-1"
+         style="stroke-width:0.377521"
+         x="134.32524"
+         y="112.04235">Code B</tspan></text>
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.349161;marker-start:url(#RoundedArrow);marker-end:url(#marker5);paint-order:fill markers stroke"
+       d="M 86.31608,110.00631 H 103.7342"
+       id="path4" />
+    <rect
+       style="fill:#ffccaa;stroke:#000000;stroke-width:0.377521;paint-order:fill markers stroke"
+       id="rect1-5"
+       width="27.272837"
+       height="18.35276"
+       x="29.663874"
+       y="182.40102"
+       ry="4.9329505" />
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:7.51829px;font-family:'3ds';-inkscape-font-specification:'3ds Light';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;stroke:#000000;stroke-width:0.377521;paint-order:fill markers stroke"
+       x="31.460196"
+       y="192.98172"
+       id="text4-2"
+       transform="scale(0.99533397,1.0046879)"><tspan
+         sodipodi:role="line"
+         id="tspan4-7"
+         style="stroke-width:0.377521"
+         x="31.460196"
+         y="192.98172">Code A</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:7.51829px;font-family:'3ds';-inkscape-font-specification:'3ds Light';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;stroke:#000000;stroke-width:0.377521;paint-order:fill markers stroke"
+       x="15.214801"
+       y="188.52049"
+       id="text3-1"
+       transform="scale(0.99533397,1.0046879)"><tspan
+         sodipodi:role="line"
+         id="tspan3-7"
+         style="stroke-width:0.377521"
+         x="15.214801"
+         y="188.52049">t1</tspan></text>
+    <rect
+       style="fill:#c8c4b7;stroke:#000000;stroke-width:0.377521;paint-order:fill markers stroke"
+       id="rect1-8-5"
+       width="27.272837"
+       height="18.35276"
+       x="129.95917"
+       y="182.40102"
+       ry="4.9329505" />
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:7.51829px;font-family:'3ds';-inkscape-font-specification:'3ds Light';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;stroke:#000000;stroke-width:0.377521;paint-order:fill markers stroke"
+       x="132.52365"
+       y="193.18097"
+       id="text4-2-2"
+       transform="scale(0.99533397,1.0046879)"><tspan
+         sodipodi:role="line"
+         id="tspan4-7-3"
+         style="stroke-width:0.377521"
+         x="132.52365"
+         y="193.18097">Code B</tspan></text>
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.349161;marker-start:url(#RoundedArrow-5);marker-end:url(#marker5-6);paint-order:fill markers stroke"
+       d="M 84.992223,191.12022 H 102.41034"
+       id="path4-9" />
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:8.32618px;font-family:'3ds';-inkscape-font-specification:'3ds Light';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#c8c4b7;stroke:#000000;stroke-width:0.0837833;stroke-dasharray:none;paint-order:fill markers stroke"
+       x="72.629601"
+       y="120.40291"
+       id="text5"
+       transform="scale(0.99533397,1.0046879)"><tspan
+         sodipodi:role="line"
+         id="tspan5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.32618px;font-family:Arial;-inkscape-font-specification:Arial;fill:#100f0c;fill-opacity:1;stroke-width:0.0837833;stroke-dasharray:none"
+         x="72.629601"
+         y="120.40291">Data transfer</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text6"
+       style="font-weight:300;font-size:16px;font-family:'3ds';-inkscape-font-specification:'3ds Light';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect6);fill:#c8c4b7;stroke:#000000;stroke-width:0.937323;paint-order:fill markers stroke" />
+    <path
+       style="opacity:1;fill:none;stroke:#000000;stroke-width:0.291567;stroke-dasharray:none;marker-end:url(#marker21);paint-order:fill markers stroke"
+       d="m 93.504984,139.75087 v 24.73695"
+       id="path20" />
+  </g>
+</svg>
