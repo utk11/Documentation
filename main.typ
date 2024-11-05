@@ -1,7 +1,7 @@
 #set page("a4")
 #set page(background: rect(height: 830pt , width: 560pt,stroke: black))
 #set heading(numbering:"1.")
-#set page(margin: 30pt , numbering:"1")
+#set page(margin: 40pt , numbering:"1")
 
 
 #figure(image("Pictures/Front.png"))
@@ -59,9 +59,12 @@ Jan-Lukas Archut MSc.]]
 #pagebreak()
 
 List of Tables 
+#outline(title: "Tables", target: figure.where(kind: table))
+
 #pagebreak()
 
 List of Figures
+#outline(title: "Figures", target: figure.where(kind: image))
 #pagebreak()
 
 = Appendix

@@ -89,11 +89,32 @@ $I^'$ is the moment of inertia along the z-axis\
 $J(q)^T$ is the constraint jacobian\
 A more detailed derivation is given in @haugCOMPUTERAIDEDKINEMATICSDYNAMICS
 === Time Integration Methods<Newmark>
-In this thesis the Newmark's time integration method is used. It is a integration method that solves index 3 DAEs
+There are many ways a DAE can be solved. Firstly a implicit or explicit method needs to be chose. Then depending on the index of the DAE it can either be solved using the original index or index reduction techniques can be used to solve the equation. A DAE is essentially a differential equation with constraints.
+In the present work a index 3 implicit method known as the  Newmark's time integration method is used.
+Firstly , the equation of motion discussed in the previous chapter can be written as
 $
-  dot(q)_(n+1) = dot(q)_n + (1 - γ) Delta t dot.double(q)_n + γ Delta t dot.double(q)_(n+1) \
-  q_(n+1) = q_n + Delta t dot(q)_n + ((1/2 - β) Delta t² dot.double(q)_n) +( β Delta t²/2 dot.double(q)_(n+1) )
+  vec(F(q,dot(q),dot.double(q),lambda,t),
+  C(q,t)) = 0
 $
+This equation can be written in terms of the unknowns as:
+$
+   vec(F(q_(t_(n+1)),dot(q)_(t_(n+1)),dot.double(q)_(t_(n+1)),lambda_(t_(n+1)),t_(t_(n+1))),
+  C(q_(t_(n+1)),t_(t_(n+1)))) = 0 \
+  \
+$
+This is a nonlinear equation whose roots satisfy the equation. A root solving method like Newton-Raphson is used. But first the equations need to be discretized in time.
+$
+
+  dot(q)_(n+1) (dot.double(q)_(t_(n+1))) = dot(q)_n + (1 - γ) Delta t dot.double(q)_n + γ Delta t dot.double(q)_(n+1) \
+  q_(n+1)(dot.double(q)_(t_(n+1))) = q_n + Delta t dot(q)_n + ((1/2 - β) Delta t² dot.double(q)_n) +( β Delta t²/2 dot.double(q)_(n+1) )
+$
+Substituting (9) in (8) we get everything in terms of 
+$
+   vec(F(dot.double(q),lambda,t),
+   C(dot.double(q),t)) = 0 
+$
+
+Solving this equation gives the acceleration and lagrange multipliers which can be substituted back in (9) to get the velocity and position.
 
 
 
@@ -147,7 +168,7 @@ These partial differential equations are solved by converting them into a weak f
 $
   integral_(V_o)S:delta E " "d V + integral_(V_o) F_b dot delta u " " d V + integral_(A_o) T dot delta u d A +  integral_(V_o) rho delta u dot dot.double(u) d V
 $\
-$W_("internal") = integral_(V_o)S:delta E " "d V $\
+$W_("internal") = integral_(V_o)S:delta e " "d V $\
 $W_("external") = integral_(V_o) F_b dot delta u " " d V + integral_(A_o) T dot delta u d A$ \
 
 $W_("kinetic") = integral_(V_o) rho delta u dot dot.double(u) d V$\
