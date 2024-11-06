@@ -57,7 +57,7 @@ url = {https://github.com/Ferrite-FEM/Ferrite.jl}
   file = {C:\Users\Utkarsh Kulkarni\Documents\Thesis Code\Literature\Applications_for_MBS-FEM-coupling_with_MpCCI_using.pdf}
 }
 
-@misc{fernandez-fernandezSymXEnergybasedSimulation2023,
+@misc{fernandez-fernandezSymXEnergybasedSimulation2023a,
   title = {{{SymX}}: {{Energy-based Simulation}} from {{Symbolic Expressions}}},
   shorttitle = {{{SymX}}},
   author = {{Fern{\'a}ndez-Fern{\'a}ndez}, Jos{\'e} Antonio and L{\"o}schner, Fabian and Westhofen, Lukas and Longva, Andreas and Bender, Jan},
@@ -74,6 +74,7 @@ url = {https://github.com/Ferrite-FEM/Ferrite.jl}
   keywords = {Computer Science - Computational Engineering Finance and Science,Computer Science - Graphics},
   file = {C:\Users\Utkarsh Kulkarni\Documents\Thesis Code\Literature\symx.pdf}
 }
+
 
 @book{font-llagunesECCOMASThematicConference2015,
   title = {{{ECCOMAS Thematic Conference}} on {{Multibody Dynamics}}: Proceedings of the {{ECCOMAS Thematic Conference}} on {{Multibody Dynamics}} 2015, {{Barcelona}}, {{June}} 29-{{July}} 2, 2015: {{Barcelona School}} of {{Industrial Engineering}}, {{Universitat Polit{\`e}cnica}} de {{Catalunya}}},
@@ -235,4 +236,72 @@ url = {https://github.com/Ferrite-FEM/Ferrite.jl}
   abstract = {An extension to an existing co-simulation algorithm [1] is presented. The original algorithm allows co-simulation of a large multibody dynamics (MBD) system with a large finite elements analysis (FEA) model; the present extension consists of a force-displacement co-simulation with a discrete element method (DEM) system.},
   langid = {english},
   file = {C:\Users\Utkarsh Kulkarni\Documents\Thesis Code\Literature\Co-sim original Idea.pdf}
+}
+@article{sicklingerInterfaceJacobianbasedCoSimulation2014,
+  title = {Interface {{Jacobian-based Co-Simulation}}},
+  author = {Sicklinger, S. and Belsky, V. and Engelmann, B. and Elmqvist, H. and Olsson, H. and W{\"u}chner, R. and Bletzinger, K.-U.},
+  year = {2014},
+  journal = {International Journal for Numerical Methods in Engineering},
+  volume = {98},
+  number = {6},
+  pages = {418--444},
+  issn = {1097-0207},
+  doi = {10.1002/nme.4637},
+  urldate = {2024-11-06},
+  abstract = {SUMMARYCo-simulation is a prominent method to solve multi-physics problems. Multi-physics simulations using a co-simulation approach have an intrinsic advantage. They allow well-established and specialized simulation tools for different fields and signals to be combined and reused with minor adaptations in contrast to the monolithic approach. However, the partitioned treatment of the coupled system poses the drawback of stability and accuracy challenges. If several different subsystems are used to form the co-simulation scenario, these issues are especially important. In this work, we propose a new co-simulation algorithm based on interface Jacobians. It allows for the stable and accurate solution of complex co-simulation scenarios involving several different subsystems. Furthermore, the Interface Jacobian-based Co-Simulation Algorithm is formulated such that it enables parallel execution of the participating subsystems. This results in a high-efficient procedure. Furthermore, the Interface Jacobian-based Co-Simulation Algorithm handles algebraic loops as the co-simulation scenario is defined in residual form. Copyright {\copyright} 2014 John Wiley \& Sons, Ltd.},
+  copyright = {Copyright {\copyright} 2014 John Wiley \& Sons, Ltd.},
+  langid = {english},
+  keywords = {co-simulation,fluid-structure interaction,interface Jacobian,multi-code coupling,multi-physics,n-code coupling,partitioned solution strategy},
+  file = {C:\Users\Utkarsh Kulkarni\Documents\MBD\Sicklinger et al_2014_Interface Jacobian-based Co-Simulation.pdf}
+}
+
+
+@article{wasfyComputationalStrategiesFlexible2003a,
+  title = {Computational Strategies for Flexible Multibody Systems},
+  author = {Wasfy, Tamer M and Noor, Ahmed K},
+  year = {2003},
+  month = nov,
+  journal = {Applied Mechanics Reviews},
+  volume = {56},
+  number = {6},
+  pages = {553--613},
+  issn = {0003-6900, 2379-0407},
+  doi = {10.1115/1.1590354},
+  urldate = {2024-11-06},
+  abstract = {The status and some recent developments in computational modeling of flexible multibody systems are summarized. Discussion focuses on a number of aspects of flexible multibody dynamics including: modeling of the flexible components, constraint modeling, solution techniques, control strategies, coupled problems, design, and experimental studies. The characteristics of the three types of reference frames used in modeling flexible multibody systems, namely, floating frame, corotational frame, and inertial frame, are compared. Future directions of research are identified. These include new applications such as micro- and nano-mechanical systems; techniques and strategies for increasing the fidelity and computational efficiency of the models; and tools that can improve the design process of flexible multibody systems. This review article cites 877 references.},
+  langid = {english},
+  file = {C:\Users\Utkarsh Kulkarni\Documents\Thesis Code\Literature\Computational_strategies_for_flexible_multibody_sy.pdf}
+}
+@article{zwolferConciseNodalbasedDerivation2020a,
+  title = {A Concise Nodal-Based Derivation of the Floating Frame of Reference Formulation for Displacement-Based Solid Finite Elements: {{Avoiding}} Inertia Shape Integrals},
+  shorttitle = {A Concise Nodal-Based Derivation of the Floating Frame of Reference Formulation for Displacement-Based Solid Finite Elements},
+  author = {Zw{\"o}lfer, Andreas and Gerstmayr, Johannes},
+  year = {2020},
+  month = jul,
+  journal = {Multibody System Dynamics},
+  volume = {49},
+  number = {3},
+  pages = {291--313},
+  issn = {1384-5640, 1573-272X},
+  doi = {10.1007/s11044-019-09716-x},
+  urldate = {2024-11-06},
+  abstract = {The Floating Frame of Reference Formulation (FFRF) is one of the most widely used methods to analyze flexible multibody systems subjected to large rigid-body motion but small strains and deformations. The FFRF is conventionally derived via a continuum mechanics approach. This tedious and circuitous approach, which still attracts attention among researchers, yields so-called inertia shape integrals. These unhandy volume integrals, arising in the FFRF mass matrix and quadratic velocity vector, depend not only on the degrees of freedom, but also on the finite element shape functions. That is why conventional computer implementations of the FFRF are laborious and error prone; they require access to the algorithmic level of the underlying finite element code or are restricted to a lumped mass approximation. This contribution presents a nodal-based treatment of the FFRF to bypass these integrals. Each flexible body is considered in its spatially discretized state ab initio, wherefore the integrals are replaced by multiplications by a constant finite element mass matrix. Besides that, this approach leads to a simpler and concise but rigorous derivation of the equations of motion. The steps to obtain the inertia-integral-free equations of motion (in 2D and 3D spaces) are presented in a clear and comprehensive way; the final result provides ready-to-implement equations of motion without a lumped mass approximation, in contrast to the conventional formulation.},
+  langid = {english},
+  file = {C:\Users\Utkarsh Kulkarni\Documents\Thesis Code\Literature\NFFR.pdf}
+}
+@article{diboldDetailedComparisonAbsolute2009,
+  title = {A {{Detailed Comparison}} of the {{Absolute Nodal Coordinate}} and the {{Floating Frame}} of {{Reference Formulation}} in {{Deformable Multibody Systems}}},
+  author = {Dibold, Markus and Gerstmayr, Johannes and Irschik, Hans},
+  year = {2009},
+  month = apr,
+  journal = {Journal of Computational and Nonlinear Dynamics},
+  volume = {4},
+  number = {2},
+  pages = {021006},
+  issn = {1555-1415, 1555-1423},
+  doi = {10.1115/1.3079825},
+  urldate = {2024-11-06},
+  abstract = {In extension to a former work, a detailed comparison of the absolute nodal coordinate formulation (ANCF) and the floating frame of reference formulation (FFRF) is performed for standard static and dynamic problems, both in the small and large deformation regimes. Special emphasis is laid on converged solutions and on a comparison to analytical and numerical solutions from the literature. In addition to the work of previous authors, the computational performance of both formulations is studied for the dynamic case, where detailed information is provided, concerning the different effects influencing the single parts of the computation time. In case of the ANCF finite element, a planar formulation based on the Bernoulli--Euler theory is utilized, consisting of two position and two slope coordinates in each node only. In the FFRF beam finite element, the displacements are described by the rigid body motion and a small superimposed transverse deflection. The latter is described by means of two static modes for the rotation at the boundary and a user-defined number of eigenmodes of the clamped-clamped beam. In numerical studies, the accuracy and computational costs of the two formulations are compared for a cantilever beam, a pendulum, and a slider-crank mechanism. It turns out that both formulations have comparable performance and that the choice of the optimal formulation depends on the problem configuration. Recent claims in literature that the ANCF would have deficiencies compared with the FFRF thus can be refuted.},
+  langid = {english},
+  file = {C:\Users\Utkarsh Kulkarni\Documents\Thesis Code\Literature\ANFCvsFFR.pdf}
 }

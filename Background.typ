@@ -59,7 +59,7 @@ $
   A(theta) = mat(cos(theta) ,-sin(theta);sin(theta) , cos(theta))
 $
 This matrix transforms the vector $S_p^B$ which is in the body reference frame to inertial reference frame.
-=== Kinematic constraints<constraints>
+=== Kinematic constraints <DAEcons>
 As a example the equation of revolute joint is explained. A revolute joint constraints two bodies to each other but allows relative rotational motion. 
 #figure(image("Pictures/revolute.svg"), caption: "Revolute joint")
 The kinematic equation can be written as

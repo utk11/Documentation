@@ -16,7 +16,7 @@ and four joints
 + revolute joint between connecting rod and crank (J2)
 + revolute joint between crank and ground (J1)
 
-These joints are modelled using kinematic constraints explained in @constraints.\ *A body attached force on the crank provides motion to the system. This force causes the crank to rotate and hence the interconnected bodies move together*.
+These joints are modelled using kinematic constraints explained in @DAEcons .\ *A body attached force on the crank provides motion to the system. This force causes the crank to rotate and hence the interconnected bodies move together*.
 \
 
 === Code Implementation 
@@ -165,7 +165,7 @@ Thus it is a necessary to model this interaction correctly for a accurate simula
 
 + Explicit Coupling Interface
     + Using kinematic constraints:<Kinematic>
-        This method condenses all the FEA nodes at the interface to a single node for ease of modelling. It is achieved by kinematically constraining the neighboring nodes to a single node called the coupling node which is located in the middle. In FEA kinematic constraints are handled by master-slave method, Lagrange multipliers and penalty methods. @guHandlingConstraintsFiniteElement2009
+        This method condenses all the FEA nodes at the interface to a single node for ease of modelling. It is achieved by kinematically constraining the neighboring nodes to a single node called the coupling node which is located in the middle. In FEA kinematic constraints are handled by master-slave method, Lagrange multipliers and penalty methods.
     + Manually:<Manually>
         In this case the kinematic quantity coming from RBD is given as a boundary condition to all the interface nodes. And an average of the reaction force coming from all the nodes is calculated to revert back.
 
