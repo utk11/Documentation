@@ -28,7 +28,7 @@ Jan-Lukas Archut MSc.]]
 
 
 #pagebreak()
-#set text(size:16pt)
+#set text(size:15pt)
 = Introduction
 #include("Introduction.typ")
 

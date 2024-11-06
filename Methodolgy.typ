@@ -164,9 +164,9 @@ On the side of RBD we have a single point whose information is available whereas
 Thus it is a necessary to model this interaction correctly for a accurate simulation.
 
 + Explicit Coupling Interface
-    + Using kinematic constraints:
-        This method condenses all the FEA nodes at the interface to a single node for ease of modelling. It is achieved by kinematically constraining the nodes to a single node which is located in the middle. In FEA kinematic constraints are handled by master-slave method, Lagrange multipliers and penalty methods.
-    + Manually:
+    + Using kinematic constraints:<Kinematic>
+        This method condenses all the FEA nodes at the interface to a single node for ease of modelling. It is achieved by kinematically constraining the neighboring nodes to a single node called the coupling node which is located in the middle. In FEA kinematic constraints are handled by master-slave method, Lagrange multipliers and penalty methods. @guHandlingConstraintsFiniteElement2009
+    + Manually:<Manually>
         In this case the kinematic quantity coming from RBD is given as a boundary condition to all the interface nodes. And an average of the reaction force coming from all the nodes is calculated to revert back.
 
 + Implicit Coupling Interface\
@@ -177,7 +177,7 @@ Thus it is a necessary to model this interaction correctly for a accurate simula
 This error function is dependent on the interface force. Starting with a initial guess this force is iterated using a Newton-Raphson technique. The jacobian required for it is calculated using finite differences. 
 
 #pagebreak()
-=== Explicit coupling
+=== Explicit coupling<ExplicitCoupling>
 Building on @IE there are two ways to couple FEA and RBD using the explicit method -
 #figure(image("Pictures/drawing.svg"),caption: "Explicit Coupling Schematic"))
 

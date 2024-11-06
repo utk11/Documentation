@@ -48,3 +48,191 @@ url = {https://github.com/Ferrite-FEM/Ferrite.jl}
   year={1995},
   url={https://api.semanticscholar.org/CorpusID:118162737}
 }
+@article{bayrasyApplicationsMBSFEMcouplingMpCCI2012,
+  title = {Applications for {{MBS-FEM-coupling}} with {{MpCCI}} Using Automotive Simulation as Example.},
+  author = {Bayrasy, Pascal and Burger, Michael and Dehning, Carsten and Kalmykov, Ilja},
+  year = {2012},
+  abstract = {A coupled MBS-FEM-simulation approach is presented. The used programs are Adams and Abaqus. MpCCI (Multi-Physics Code Coupling Interface) is used for a copled simulation. As example passing of a road hole by the left front wheel is considered. The corresponding tire is modelled with FEM approach. Position as boundary condition is provided by multibody model of a car in MSC.Adams. Both programs simulate parallel and communicate with MpCCI server for exchange of data.},
+  langid = {english},
+  file = {C:\Users\Utkarsh Kulkarni\Documents\Thesis Code\Literature\Applications_for_MBS-FEM-coupling_with_MpCCI_using.pdf}
+}
+
+@misc{fernandez-fernandezSymXEnergybasedSimulation2023,
+  title = {{{SymX}}: {{Energy-based Simulation}} from {{Symbolic Expressions}}},
+  shorttitle = {{{SymX}}},
+  author = {{Fern{\'a}ndez-Fern{\'a}ndez}, Jos{\'e} Antonio and L{\"o}schner, Fabian and Westhofen, Lukas and Longva, Andreas and Bender, Jan},
+  year = {2023},
+  month = feb,
+  number = {arXiv:2303.02156},
+  eprint = {2303.02156},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  urldate = {2024-11-06},
+  abstract = {Optimization time integrators have proven to be effective at solving complex multi-physics problems, such as deformation of solids with non-linear material models, contact with friction, strain limiting, etc. For challenging problems with high accuracy requirements, Newton-type optimizers are often used. This necessitates first- and second-order derivatives of the global non-linear objective function. Manually differentiating, implementing and optimizing the resulting code is extremely time-consuming, error-prone, and precludes quick changes to the model. We present SymX, a framework based on symbolic expressions that computes the first and second derivatives by symbolic differentiation, generates efficient vectorized source code, compiles it on-the-fly, and performs the global assembly of element contributions in parallel. The user only has to provide the symbolic expression of an energy function for a single element in the discretization and our system will determine the assembled derivatives for the whole model. SymX is designed to be an integral part of a simulation system and can easily be integrated into existing ones. We demonstrate the versatility of our framework in various complex simulations showing different non-linear materials, higher-order finite elements, rigid body systems, adaptive cloth, frictional contact, and coupling multiple interacting physical systems. Moreover, we compare our method with alternative approaches and show that SymX is significantly faster than a current state-or-the-art framework (up to two orders of magnitude for a higher-order FEM simulation).},
+  archiveprefix = {arXiv},
+  langid = {english},
+  keywords = {Computer Science - Computational Engineering Finance and Science,Computer Science - Graphics},
+  file = {C:\Users\Utkarsh Kulkarni\Documents\Thesis Code\Literature\symx.pdf}
+}
+
+@book{font-llagunesECCOMASThematicConference2015,
+  title = {{{ECCOMAS Thematic Conference}} on {{Multibody Dynamics}}: Proceedings of the {{ECCOMAS Thematic Conference}} on {{Multibody Dynamics}} 2015, {{Barcelona}}, {{June}} 29-{{July}} 2, 2015: {{Barcelona School}} of {{Industrial Engineering}}, {{Universitat Polit{\`e}cnica}} de {{Catalunya}}},
+  shorttitle = {{{ECCOMAS Thematic Conference}} on {{Multibody Dynamics}}},
+  editor = {{Font-Llagunes}, Josep M. and {European Community on Computational Methods in Applied Sciences} and {Universitat Polit{\`e}cnica de Catalunya}},
+  year = {2015},
+  publisher = {CIMNE},
+  address = {Barcelona},
+  isbn = {978-84-944244-0-3},
+  langid = {english},
+  file = {C:\Users\Utkarsh Kulkarni\Documents\Thesis Code\Literature\TC-PROCEEDINGS-2015-MULTIBODY.pdf}
+}
+
+@article{gerstmayr3DFiniteElement2006,
+  title = {A {{3D Finite Element Method}} for {{Flexible Multibody Systems}}},
+  author = {Gerstmayr, Johannes and Sch{\"o}berl, Joachim},
+  year = {2006},
+  month = may,
+  journal = {Multibody System Dynamics},
+  volume = {15},
+  number = {4},
+  pages = {305--320},
+  issn = {1384-5640, 1573-272X},
+  doi = {10.1007/s11044-006-9009-3},
+  urldate = {2024-11-06},
+  abstract = {An efficient finite element (FE) formulation for the simulation of multibody systems is derived from Hamilton's principle. According to the classical assumptions of multibody systems, a large rotation formulation has been chosen, where large rotations and large displacements, but only small deformations of the single bodies are taken into account. Absolute coordinates are chosen for the degrees of freedom. The numerical solution strategy is based on the assumption that the period of large rotations of the single bodies is much larger than the period of oscillations due to deformation. The strain tensor is modified based on the latter assumption and therefore, the present formulation distinguishes significantly from standard nodal based nonlinear finite element methods. Constraints are defined in integral form for every pair of surfaces of two bodies. This leads to a small number of constraint equations and avoids artificial stress singularities. Due to the special structure of the resulting system, the most expensive part of the system of equations can be solved in advance and only once for a given Runge-Kutta scheme. The present method has been implemented and tested with the FE-package NETGEN/NGSOLVE.},
+  copyright = {http://www.springer.com/tdm},
+  langid = {english},
+  file = {C:\Users\Utkarsh Kulkarni\Documents\Thesis Code\Literature\A_3D_Finite_Element_Method_for_Flexible.pdf}
+}
+
+@article{guHandlingConstraintsFiniteElement2009,
+  title = {Handling of {{Constraints}} in {{Finite-Element Response Sensitivity Analysis}}},
+  author = {Gu, Quan and Barbato, Michele and Conte, Joel P.},
+  year = {2009},
+  month = dec,
+  journal = {Journal of Engineering Mechanics},
+  volume = {135},
+  number = {12},
+  pages = {1427--1438},
+  issn = {0733-9399, 1943-7889},
+  doi = {10.1061/(ASCE)EM.1943-7889.0000053},
+  urldate = {2024-11-06},
+  abstract = {In this paper, the direct differentiation method ͑DDM͒ for finite-element ͑FE͒ response sensitivity analysis is extended to linear and nonlinear FE models with multi-point constraints ͑MPCs͒. The analytical developments are provided for three different constraint handling methods, namely: ͑1͒ the transformation equation method; ͑2͒ the Lagrange multiplier method; and ͑3͒ the penalty function method. Two nonlinear benchmark applications are presented: ͑1͒ a two-dimensional soil-foundation-structure interaction system and ͑2͒ a three-dimensional, one-bay by one-bay, three-story reinforced concrete building with floor slabs modeled as rigid diaphragms, both subjected to seismic excitation. Time histories of response parameters and their sensitivities to material constitutive parameters are computed and discussed, with emphasis on the relative importance of these parameters in affecting the structural response. The DDMbased response sensitivity results are compared with corresponding forward finite difference analysis results, thus validating the formulation presented and its computer implementation. The developments presented in this paper close an important gap between FE responseonly analysis and FE response sensitivity analysis through the DDM, extending the latter to applications requiring response sensitivities of FE models with MPCs. These applications include structural optimization, structural reliability analysis, and finite-element model updating.},
+  langid = {english},
+  file = {C:\Users\Utkarsh Kulkarni\Documents\Thesis Code\Literature\Kinematic Constraints.pdf}
+}
+
+@article{inciSystemlevelCosimulationMechatronic,
+  title = {System-Level {{Co-simulation}} of {{Mechatronic Systems}} for {{Design Space Exploration}}},
+  author = {Inci, Emin Oguz},
+  langid = {english},
+  file = {C:\Users\Utkarsh Kulkarni\Documents\Thesis Code\Literature\EOINCI_thesis_final.pdf}
+}
+
+@article{mullerInteractiveVirtualMaterials,
+  title = {Interactive {{Virtual Materials}}},
+  author = {Muller, Matthias and Gross, Markus},
+  abstract = {In this paper we present a fast and robust approach for simulating elasto-plastic materials and fracture in real time. Our method extends the warped stiffness finite element approach for linear elasticity and combines it with a strain-state-based plasticity model. The internal principal stress components provided by the finite element computation are used to determine fracture locations and orientations. We also present a method to consistently animate and fracture a detailed surface mesh along with the underlying volumetric tetrahedral mesh. This multi-resolution strategy produces realistic animations of a wide spectrum of materials at interactive rates that have typically been simulated off-line thus far.},
+  langid = {english},
+  file = {C:\Users\Utkarsh Kulkarni\Documents\Thesis Code\Literature\interactive virtual methods.pdf}
+}
+
+@inproceedings{prescottRealTimeSimulationFlexible2016,
+  title = {Real-{{Time Simulation}} of {{Flexible Multibody Models}}},
+  booktitle = {Volume {{4B}}: {{Dynamics}}, {{Vibration}}, and {{Control}}},
+  author = {Prescott, William},
+  year = {2016},
+  month = nov,
+  pages = {V04BT05A008},
+  publisher = {American Society of Mechanical Engineers},
+  address = {Phoenix, Arizona, USA},
+  doi = {10.1115/IMECE2016-67060},
+  urldate = {2024-11-06},
+  abstract = {This paper will look at how to include flexible modes into a real-time multibody simulation. The approach proposed in this paper is to divide the equations into two separate systems: rigid and flexible, which are then co-simulated by two separate integrators. After the flexible equations are integrated at each time step the modal coordinates are used to update the joint and force attachment locations in the rigid model then the joint forces from the rigid model are fed to the flexible model. This approach essentially means a new rigid model is solved at each time step. The use of a co-simulation approach will also allow separate processors to be used for the flexible and rigid equations.},
+  isbn = {978-0-7918-5055-8},
+  langid = {english},
+  file = {C:\Users\Utkarsh Kulkarni\Documents\Thesis Code\Literature\IMECE2016-67060 -- ac9cdf6ee395691ef830d3c4a473181b -- Anna’s Archive.pdf}
+}
+
+@inproceedings{rossmannDevelopingVirtualTestbeds2010,
+  title = {Developing {{Virtual Testbeds}} for Mobile Robotic Applications in the Woods and on the Moon},
+  booktitle = {2010 {{IEEE}}/{{RSJ International Conference}} on {{Intelligent Robots}} and {{Systems}}},
+  author = {Rossmann, Juergen and Jung, Thomas Josef and Rast, Malte},
+  year = {2010},
+  month = oct,
+  pages = {4952--4957},
+  publisher = {IEEE},
+  address = {Taipei},
+  doi = {10.1109/IROS.2010.5651665},
+  urldate = {2024-11-06},
+  abstract = {Simulation in the context of engineering often focuses on very special details of global systems. Robot designers usually begin with the analysis of new actuators and joint designs. This corresponds to a ``bottom-up''-strategy in the development of simulation models. For classical fields of application of robotics, e.g. in production plants with a well defined environment this is the approved method, because it allows very detailed insights into the analyzed subsystems. On the other hand, unpredictable effects of the interaction of multiple subsystems may easily be overseen. In particular, nontechnical environments like in moon exploration tasks or in a biological environment like in forestry applications are hard to describe in an analytical way to integrate them into an analytical simulation model.},
+  isbn = {978-1-4244-6674-0},
+  langid = {english},
+  file = {C:\Users\Utkarsh Kulkarni\Documents\Thesis Code\Literature\Developing_Virtual_Testbeds_for_mobile_robotic_applications_in_the_woods_and_on_the_moon.pdf}
+}
+
+@inproceedings{ryuIntegrationFiniteElement2009,
+  title = {Integration of {{Finite Element}} and {{Multibody Dynamics Models Using Gluing Algorithm}}},
+  booktitle = {Volume 4: 7th {{International Conference}} on {{Multibody Systems}}, {{Nonlinear Dynamics}}, and {{Control}}, {{Parts A}}, {{B}} and {{C}}},
+  author = {Ryu, Geunsoo and Ma, Zheng-Dong and Hulbert, Gregory M.},
+  year = {2009},
+  month = jan,
+  pages = {103--113},
+  publisher = {ASMEDC},
+  address = {San Diego, California, USA},
+  doi = {10.1115/DETC2009-86735},
+  urldate = {2024-11-06},
+  abstract = {This paper provides a method of the coupling multibody dynamics(MBD) and finite element(FE) codes to solve flexible multibody dynamics problems across a distributed simulation platform. The aim is to minimize the information exchange across the different platforms yet still obtain results of engineering accuracy. Many approaches for solving flexible multibody systems consisting of elastic and rigid components have focused on how the equations of motion for the flexible components can be formulated and combined with other component equations. We present a Partitioned Iteration Method (PIM), which can decouple the elastic deformation and rigid body motion of the flexible body by employing a CGfollowing floating reference frame. In the PIM, the global motion of a flexible body is expressed as a summation of the linearized elastic deformation measured in the CG-following reference frame and the motion of the reference frame and be solved in separated finite element and multibody dynamics solvers. The PIM is combined with the gluing algorithm and is used to solve multiple flexible bodies in a distributed simulation environment. It enables the use of independent simulation servers, where each server can run commercially available or research-based MBD and/or FE solvers. Examples are provided to demonstrate the performance of the new method and to show how to decouple and integrate a general flexible multi-body dynamics system.},
+  isbn = {978-0-7918-4901-9},
+  langid = {english},
+  file = {C:\Users\Utkarsh Kulkarni\Documents\Thesis Code\Literature\FEA-MBD.pdf}
+}
+
+@article{shabanaOverviewANCFApproach2023,
+  title = {An Overview of the {{ANCF}} Approach, Justifications for Its Use, Implementation Issues, and Future Research Directions},
+  author = {Shabana, Ahmed A.},
+  year = {2023},
+  month = aug,
+  journal = {Multibody System Dynamics},
+  volume = {58},
+  number = {3-4},
+  pages = {433--477},
+  issn = {1384-5640, 1573-272X},
+  doi = {10.1007/s11044-023-09890-z},
+  urldate = {2024-11-06},
+  abstract = {This paper presents an overview of the finite-element (FE) absolute nodal coordinate formulation (ANCF), provides justifications for its use, and discusses issues relevant to its proper computer implementation and interpretation of its numerical results. The paper discusses future research directions for using ANCF finite elements in new areas such as soft tissues and materials relevant to broader areas of computational engineering and science. Selection of coordinates, definitions of forces and moments, geometric interpretation of the position gradients, and noncommutativity of finite rotations are among the topics discussed. To address concerns associated with finite-rotation noncommutativity and definition of moments in flexible-body dynamics, the paper demonstrates that the interpolation order is not preserved when the finite-rotation sequence is changed. Position gradients, on the other hand, are unique and preserve the highest interpolation order. It is shown that, while the spin tensor used to define the ANCF generalized forces due to moment application is associated with a rigid frame defined by the polar decomposition theorem, explicit polar decomposition of the matrix of position-gradient vectors is not required. ANCF elements have features that distinguish them from conventional finite elements and make them suited for largedisplacement analysis of multibody systems (MBS). Their displacement fields, which allow increasing interpolation order without increasing number of nodes or using noncommutative finite rotations, are the basis for developing lower-dimension consistent rotation-based formulations (CRBF) without lowering the interpolation order. Nonetheless, the continuumkinematic description of fully parameterized ANCF elements cannot be ignored when interpreting the ANCF numerical results. This issue is particularly important when comparing ANCF results with solutions obtained using semi-continuum conventional beam and plate models and simplified analytical approaches.},
+  langid = {english},
+  file = {C:\Users\Utkarsh Kulkarni\Documents\Thesis Code\Literature\ANCF.pdf}
+}
+
+@article{trommeWeaklyFullyCoupled2016a,
+  title = {Weakly and Fully Coupled Methods for Structural Optimization of Flexible Mechanisms},
+  author = {Tromme, Emmanuel and Br{\"u}ls, Olivier and Duysinx, Pierre},
+  year = {2016},
+  month = dec,
+  journal = {Multibody System Dynamics},
+  volume = {38},
+  number = {4},
+  pages = {391--417},
+  issn = {1384-5640, 1573-272X},
+  doi = {10.1007/s11044-015-9493-4},
+  urldate = {2024-11-06},
+  abstract = {The paper concerns a detailed comparison between two optimization methods that are used to perform the structural optimization of flexible components within a multibody system (MBS) simulation. The dynamic analysis of flexible MBS is based on a nonlinear finite element formulation. The first method is a weakly coupled method, which reformulates the dynamic response optimization problem in a two-level approach. First, a rigid or flexible MBS simulation is performed, and second, each component is optimized independently using a quasi-static approach in which a series of equivalent static load (ESL) cases obtained from the MBS simulation are applied to the respective components. The second method, the fully coupled method, performs the dynamic response optimization using the time response obtained directly from the flexible MBS simulation. Here, an original procedure is proposed to evaluate the ESL from a nonlinear finite element simulation, contrasting with the floating reference frame formulation exploited in the standard ESL method. Several numerical examples are provided to support our position. It is shown that the fully coupled method is more general and accommodates all types of constraints at the price of a more complex optimization process.},
+  langid = {english},
+  file = {C:\Users\Utkarsh Kulkarni\Documents\Thesis Code\Literature\Tromme et al_2016_Weakly and fully coupled methods for structural optimization of flexible.pdf}
+}
+
+@article{wangGluingAlgorithmDistributed,
+  title = {A {{Gluing Algorithm}} for {{Distributed Simulation}} of {{Multibody Systems}}},
+  author = {Wang, Jinzhong and Ma, Zheng-Dong and Hulbert, Gregory M},
+  abstract = {A new gluing algorithm is presented that can be used to couple distributed subsystem models for dynamics simulation of mechanical systems. Using this gluing algorithm, subsystem models can be analyzed at their distributed locations, using their own independent solvers, and on their own platforms. The gluing algorithm developed relies only on information available at the subsystem interfaces. This not only enables efficient integration of subsystem models, but also engenders model security by limiting model access only to the exposed interface information. These features make the algorithm suitable for a real and practical distributed simulation environment.},
+  langid = {english},
+  file = {C:\Users\Utkarsh Kulkarni\Documents\Thesis Code\Literature\B_NODY.0000014558.70434.b0.pdf}
+}
+@article{ortizCOSIMULATIONLARGEMBD,
+  title = {{{CO-SIMULATION OF LARGE MBD}}, {{FEA AND DEM SYSTEM}}},
+  author = {Ortiz, Jos{\'e} L and MacDonald, Neil},
+  abstract = {An extension to an existing co-simulation algorithm [1] is presented. The original algorithm allows co-simulation of a large multibody dynamics (MBD) system with a large finite elements analysis (FEA) model; the present extension consists of a force-displacement co-simulation with a discrete element method (DEM) system.},
+  langid = {english},
+  file = {C:\Users\Utkarsh Kulkarni\Documents\Thesis Code\Literature\Co-sim original Idea.pdf}
+}

@@ -99,7 +99,7 @@ $
 This equation can be written in terms of the unknowns as:
 $
    vec(F(q_(t_(n+1)),dot(q)_(t_(n+1)),dot.double(q)_(t_(n+1)),lambda_(t_(n+1)),t_(t_(n+1))),
-  C(q_(t_(n+1)),t_(t_(n+1)))) = 0 \
+  C(q_(t_(n+1)),t_(n+1))) = 0 \
   \
 $
 This is a nonlinear equation whose roots satisfy the equation. A root solving method like Newton-Raphson is used. But first the equations need to be discretized in time.
