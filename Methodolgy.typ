@@ -164,19 +164,14 @@ This is the most important step in co-simulation. Implicit and explicit coupling
 On the side of RBD we have a single point whose information is available whereas on the FEA body there are multiple nodes. To relate a single point in RBD to multiple nodes is FEA is a challenging task.
 Thus it is a necessary to model this interaction correctly for a accurate simulation.
 
-+ Explicit Coupling Interface
+
     + Using kinematic constraints:<Kinematic>
         This method condenses all the FEA nodes at the interface to a single node for ease of modelling. It is achieved by kinematically constraining the neighboring nodes to a single node called the coupling node which is located in the middle. In FEA kinematic constraints are handled by master-slave method, Lagrange multipliers and penalty methods. @guHandlingConstraintsFiniteElement2009. Abaqus uses the master-slave method in some cases and Lagrange multiplier method in others. 
         #figure(image("Pictures/Kinematic node.png", width: 50%),caption: "")
     + Manually:<Manually>
         In this case the kinematic quantity coming from RBD is given as a boundary condition to all the interface nodes. And an average of the reaction force coming from all the nodes is calculated to revert back.
 
-+ Implicit Coupling Interface\
-    In implicit method a error function is defined that is minimized. For eg:
-    $
-    "error"(f) = sum^("fea nodes") (u^i_("fea")(f)-u^i_("rbd")(f))^2\ u in "kinematic quantity"
-    $
-This error function is dependent on the interface force. Starting with a initial guess this force is iterated using a Newton-Raphson technique. The jacobian required for it is calculated using finite differences. 
+
 
 #pagebreak()
 === Explicit coupling<ExplicitCoupling>
@@ -196,5 +191,11 @@ Coupling Dynamic FEA and RBD which is also dynamic in nature is achieved by tran
 Unlike the static-dynamic coupling the information about the previous time step is not required for the RBD code to calculate the kinematic quantity that has to be sent. However the acceleration, velocity and displacement information from previous time-step of all the nodes is necessary for the FEA code. The FEA time integration uses this information to predict the quantities for the next time-step.
 
 === Implicit Coupling
-
+In the implicit method the definition of the error function plays a key role. Naturally the implicit method is computationally more expensive as it is performing the time - step repeatedly util the error is minimized.
 #figure(image("Pictures/drawing 2.svg"), caption: "Implicit Coupling Schematic")
+
+ In implicit method a error function is defined that is minimized. For eg:
+    $
+    "error"(f) = sum^("fea nodes") (u^i_("fea")(f)-u^i_("rbd")(f))^2\ u in "kinematic quantity"
+    $
+This error function is dependent on the interface force. Starting with a initial guess this force is iterated using a Newton-Raphson technique. The jacobian required for it is calculated using finite differences. Which means that a jacobian needs to be evaluated in every iteration. To combat this @fernandez-fernandezSymXEnergybasedSimulation2023a suggests to use a symbolic engine to calculate a symbolic jacobian and *evaluate* it in every step instead of *calculating* it.

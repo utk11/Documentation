@@ -3,11 +3,9 @@ The results of the static FEA and dynamic RBD to create a quasi-dynamic simulati
 A interesting discovery about the interface modelling is that if kinematic constraints are used to model the interface node on the FEA side, the simulation does not converge until the reaction force is divided by the number of nodes that are constrained to the coupling node. Then is becomes exactly equal to the manual version of interface coupling. Here the results of the manual interface coupling are presented.\
 Explicit coupling is explained in @ExplicitCoupling. 
 === Acceleration Comparison
-
-
-
-
-
+Acceleration of piston in Y direction and angular acceleration along the Z direction are not shown as they are zero because their motion is constrained by the prismatic joint.\
+Here the acceleration as well as the constraint force as a consequence are continuously increasing as evident from the graphs. This is because a ideal system without any damping or friction (no energy dissipation) is considered. So the external force constantly adds energy to the system without any dissipation.
+However the energy in the RBD system is increasing faster than that of the co-sim setup. This is because of the kinematic quantity being transferred to the FEA code. Acceleration is a direct consequence of force , but displacement is integrated from acceleration. This is why it takes time to reflect in the co-simulation methodology
 #figure(image("Pictures/SD/Acceleration of Piston in X direction.png", width: 80%), caption: "Acceleration of Piston in X direction")
 
 
@@ -20,6 +18,8 @@ Explicit coupling is explained in @ExplicitCoupling.
 
 
 === Force Comparison
+A constant theme in these figures in that the RBD code is lagging behind the FEA code.
+
 #figure(grid(columns: 2,
 [#figure(image("Pictures/SD/Constraint force on piston in x direction.png"))],
 [#figure(image("Pictures/SD/Constraint force on piston in y direction.png"))]), caption: "Constraint force on Piston X and Y directions")
@@ -53,7 +53,8 @@ The reason for that is during the very first step the crank moves or is accelera
 
 #pagebreak()
 == Implicit Static - Dynamic Coupling
-In static FEA if the mesh is not constrained it 
+A system is said to be in static equilibrium when the addition of forces and torques equal to zero. In static FEA for the body to be in static equilibrium the forces need to balance out or some kind of constraint is needed to balance the external forces. 
+In the coupling method a force
 #pagebreak()
 == Implicit Dynamic - Dynamic Coupling
 Due to time constraint on the thesis this case wasn't tested. 
