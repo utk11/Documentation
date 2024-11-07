@@ -42,4 +42,5 @@ Explicit coupling is explained in @ExplicitCoupling.
  )
 
 
-== Comments on the other Coupling Strategies
+== Explicit Dynamic-Dynamic Coupling
+In this case both the codes are performing a dynamic analysis. So the time steps need to be synced and data is shared over every step. In dynamic FEA the consideration of nonlinear behavior becomes crucial. If the nonlinear behavior is ignored as in a linear analysis the rigid body motion of the mesh creates artificial stresses and ultimately artificial reaction forces that are returned to the other code @mullerInteractiveVirtualMaterials. 

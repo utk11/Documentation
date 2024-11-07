@@ -166,7 +166,7 @@ Thus it is a necessary to model this interaction correctly for a accurate simula
 
 + Explicit Coupling Interface
     + Using kinematic constraints:<Kinematic>
-        This method condenses all the FEA nodes at the interface to a single node for ease of modelling. It is achieved by kinematically constraining the neighboring nodes to a single node called the coupling node which is located in the middle. In FEA kinematic constraints are handled by master-slave method, Lagrange multipliers and penalty methods.
+        This method condenses all the FEA nodes at the interface to a single node for ease of modelling. It is achieved by kinematically constraining the neighboring nodes to a single node called the coupling node which is located in the middle. In FEA kinematic constraints are handled by master-slave method, Lagrange multipliers and penalty methods. @guHandlingConstraintsFiniteElement2009. Abaqus uses the master-slave method in some cases and Lagrange multiplier method in others. 
         #figure(image("Pictures/Kinematic node.png", width: 50%),caption: "")
     + Manually:<Manually>
         In this case the kinematic quantity coming from RBD is given as a boundary condition to all the interface nodes. And an average of the reaction force coming from all the nodes is calculated to revert back.
