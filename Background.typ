@@ -183,7 +183,7 @@ $
 $
 But if the small strain assumption is used i.e $d u approx.eq 0$ or very small , then the higher order terms can be ignored and the equation can be linearized.
 $
- M dot.double(u) + R_("int")(u) + F_("ext") = 0 
+ M dot.double(u) + K u + F_("ext") = 0 
 $
 for transient analysis and 
 $
