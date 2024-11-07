@@ -145,7 +145,7 @@ end
 end
  ```
 #pagebreak()
-== Co-simulation Methodology
+== Co-simulation Methodology<CosimMethod>
 The simulation setup can be understood from the figure shown below.
 
 #figure(image("Pictures/Simulation setup.png", width: 80%), caption: "Co-simulation Setup")

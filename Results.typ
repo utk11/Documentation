@@ -41,6 +41,19 @@ Explicit coupling is explained in @ExplicitCoupling.
   [#image("Pictures/SD/Position of Crank along X direction.png")],[#image("Pictures/SD/Position of Crank along Y direction.png")])
  )
 
+#pagebreak()
 
 == Explicit Dynamic-Dynamic Coupling
-In this case both the codes are performing a dynamic analysis. So the time steps need to be synced and data is shared over every step. In dynamic FEA the consideration of nonlinear behavior becomes crucial. If the nonlinear behavior is ignored as in a linear analysis the rigid body motion of the mesh creates artificial stresses and ultimately artificial reaction forces that are returned to the other code @mullerInteractiveVirtualMaterials. 
+In this case both the codes are performing a dynamic analysis. So the time steps need to be synced and data is shared over every step. In dynamic FEA the consideration of nonlinear behavior becomes crucial. If the nonlinear behavior is ignored as in a linear analysis the rigid body motion of the mesh creates artificial stresses and ultimately artificial reaction forces that are returned to the other code @mullerInteractiveVirtualMaterials. So it becomes necessary to include the nonlinear effects in FEA code. 
+Although the explicit method is unstable and won't converge as per the findings of this work. 
+
+#figure(image("Pictures/explicit FEA.png", width: 80%), caption: "Dynamic FEA")
+
+The reason for that is during the very first step the crank moves or is accelerated due to the force applied to it. But the piston is stationary as it is not connected to crank via the connecting rod as explained in @CosimMethod. This means the kinematic quantities sent to the FEA code are zero acceleration on the piston's side and a non zero acceleration on the cranks side. When this boundary condition is applied in the FEA code a reaction force is only generated on one side where the nonzero BC was applied. There is a zero reaction force on the piston's side as seen in the "Figure 26". This means that the simulation continues with a zero reaction force on the piston. In the next step a similar thing happens because the piston has not been accelerated due to a lack of force. This continues until the acceleration grows big enough to generate a substantial reaction force on the piston. But until then it is too late.
+
+#pagebreak()
+== Implicit Static - Dynamic Coupling
+In static FEA if the mesh is not constrained it 
+#pagebreak()
+== Implicit Dynamic - Dynamic Coupling
+Due to time constraint on the thesis this case wasn't tested. 
