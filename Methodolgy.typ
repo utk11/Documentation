@@ -148,7 +148,7 @@ end
 == Co-simulation Methodology
 The simulation setup can be understood from the figure shown below.
 
-#figure(image("Pictures/Simulation setup.png"), caption: "Co-simulation Setup")
+#figure(image("Pictures/Simulation setup.png", width: 80%), caption: "Co-simulation Setup")
 As seen from the figure the flexible body is separated from the RBD assembly and modelled as a FEA body in the respective code. This creates a void in the RBD code because of the body that was taken out from it. Naturally this would lead to a constraint deficiency in the RBD simulation. This is overcome by adding forces to the bodies to which the FEA body was connected. For eg the connecting rod was attached to the piston and crank. So the connected rod was replaced by a force on each body (piston and crank) at the point where they were connected as seen from the figure.
 The table below lists all the different ways this co-simulation can be achieved.
 
@@ -157,7 +157,8 @@ The table below lists all the different ways this co-simulation can be achieved.
 [Explicit],[Static FEA - Dynamic RBD],[displacement vector],[force vector],
 [Explicit],[Dynamic FEA - Dynamic RBD],[acceleration vector],[force vector],
 [Implicit],[Static FEA - Dynamic RBD],[force vector],[force vector],
-[Implicit],[Dynamic FEA - Dynamic RBD],[force vector],[force vector]), caption: "Coupling methods" )<CPtable>\
+[Implicit],[Dynamic FEA - Dynamic RBD],[force vector],[force vector]), caption: "Coupling methods" )<CPtable>
+
 === Interface Modelling 
 This is the most important step in co-simulation. Implicit and explicit coupling is interfaced differently as the quantities that are sent and received are different in explicit while the same in implicit [@CPtable].\
 On the side of RBD we have a single point whose information is available whereas on the FEA body there are multiple nodes. To relate a single point in RBD to multiple nodes is FEA is a challenging task.
@@ -166,6 +167,7 @@ Thus it is a necessary to model this interaction correctly for a accurate simula
 + Explicit Coupling Interface
     + Using kinematic constraints:<Kinematic>
         This method condenses all the FEA nodes at the interface to a single node for ease of modelling. It is achieved by kinematically constraining the neighboring nodes to a single node called the coupling node which is located in the middle. In FEA kinematic constraints are handled by master-slave method, Lagrange multipliers and penalty methods.
+        #figure(image("Pictures/Kinematic node.png", width: 50%),caption: "")
     + Manually:<Manually>
         In this case the kinematic quantity coming from RBD is given as a boundary condition to all the interface nodes. And an average of the reaction force coming from all the nodes is calculated to revert back.
 
@@ -179,7 +181,7 @@ This error function is dependent on the interface force. Starting with a initial
 #pagebreak()
 === Explicit coupling<ExplicitCoupling>
 Building on @IE there are two ways to couple FEA and RBD using the explicit method -
-#figure(image("Pictures/drawing.svg"),caption: "Explicit Coupling Schematic"))
+#figure(image("Pictures/drawing.svg"),caption: "Explicit Coupling Schematic")
 
 ==== Static - Dynamic
 Static FEA is coupled with RBD which is a dynamic simulation. The quantity that is sent to FEA is 
