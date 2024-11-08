@@ -51,6 +51,7 @@ Jan-Lukas Archut MSc.]]
 #pagebreak()
 
 = Conclusion and Outlook
+#include("Conclusion.typ")
 #pagebreak()
 
 
