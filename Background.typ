@@ -25,7 +25,7 @@ In this method a data is shared between the two codes only once during a timeste
 
 #pagebreak()
 == Multi-Rigid Body Dynamics 
-As the name suggests it is the study of multiple bodies interacting with one another in a simulation. The key *assumption* in MBD is that the every body is considered to be *rigid* i.e it cannot deform or change its shape. This assumption reduces the infinite degrees of freedom(DOFs) of a body to 6. So the total DOF's of a system equal $6n$ where $n$ is the number of bodies in the system.  
+As the name suggests it is the study of multiple bodies interacting with one another in a simulation. The key *assumption* in MBD is that every body is considered to be *rigid* i.e it cannot deform or change its shape. This assumption reduces the infinite degrees of freedom(DOFs) of a body to 6. So the total DOF's of a system equal $6n$ where $n$ is the number of bodies in the system.  
 In MBD a Differential Algebraic equation(DAE) i.e a Differential equation with constraints is solved. These constraints arise from the kinematic constraints like a revolute joint between two bodies. The subsequent sections discuss the theoretical aspects of RBD in detail.
 
 

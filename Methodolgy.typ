@@ -162,7 +162,7 @@ The table below lists all the different ways this co-simulation can be achieved.
 === Interface Modelling 
 This is the most important step in co-simulation. Implicit and explicit coupling is interfaced differently as the quantities that are sent and received are different in explicit while the same in implicit [@CPtable].\
 On the side of RBD we have a single point whose information is available whereas on the FEA body there are multiple nodes. To relate a single point in RBD to multiple nodes is FEA is a challenging task.
-Thus it is a necessary to model this interaction correctly for a accurate simulation.
+Thus it is a necessary to model this interaction correctly for an accurate simulation.
 
 
     + Using kinematic constraints:<Kinematic>

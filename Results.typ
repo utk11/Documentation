@@ -1,6 +1,6 @@
 == Explicit Static-Dynamic Coupling
 The results of the static FEA and dynamic RBD to create a quasi-dynamic simulation are presented here. 
-A *interesting discovery* about the interface modelling is that if kinematic constraints(using master slave method) are used to model the interface node on the FEA side, the simulation does not converge.
+An *interesting discovery* about the interface modelling is that if kinematic constraints(using master slave method) are used to model the interface node on the FEA side, the simulation does not converge.
 But if the reaction force is divided by the number of nodes that are constrained to the coupling node it does converge and gives exactly same results as that of the manual coupling. 
 
 Here the results of the manual interface coupling are presented.\
