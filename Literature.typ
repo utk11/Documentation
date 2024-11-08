@@ -27,22 +27,18 @@ Kinematic constraints, such as joints or prescribed motions, can be more straigh
 @wasfyComputationalStrategiesFlexible2003a
 @gerstmayr3DFiniteElement2006
 
-*Co-simulation or Coupling methods*
-RBD is used to simulate rigid bodies and FEA to simulate deformable bodies. Co-simulation creates a bridge between these to methods to one can affect the simulation of the other. This way the effects of a deformable body can be considered in a RBD simulation. MPCCI @mpcci  is a tool built by the *"The Fraunhofer Institute for Algorithms
+*Co-simulation or Coupling methods*\
+RBD is used to simulate rigid bodies and FEA to simulate deformable bodies. Co-simulation creates a bridge between these two methods so one can affect the simulation of the other. This way the effects of a deformable body can be considered in a RBD simulation. MPCCI @mpcci  is a tool built by the *"The Fraunhofer Institute for Algorithms
 and Scientific Computing SCAI"* that creates a co-simulation environment by making two softwares "talk" to one another. For eg. Abaqus and Adams two commercial softwares are used to create a FEA-MBD co-simulation to simulate a system with *one* flexible body.
 MPCCI provides two ways to couple - implicit and explicit , these are further explained in @ExplicitCoupling. 
 \
 
 @busch2010mbs explains the different coupling techniques like explicit, implicit and semi-implicit.
-In @wangGluingAlgorithmDistributed a algorithm to couple such simulations is proposed along with the implementation details. A implicit approach is used where error function is defined based on the quantities at the interface. The idea is iterate until the error is minimized over every time-step. @ryuIntegrationFiniteElement2009 used this approach to couple FEA and flexible - MBD where the flexible body is modelled using the FFR approach. 
-
-
-
-
+In @wangGluingAlgorithmDistributed a algorithm to couple such simulations is proposed along with the implementation details. A implicit approach is used where error function is defined based on the quantities at the interface. The idea is iterate until the error is minimized over every time-step. @ryuIntegrationFiniteElement2009 used this approach to couple FEA and flexible - MBD where the flexible body is modelled using the FFR approach. A similar method is proposed in @prescottRealTimeSimulationFlexible2016.\
+@fernandez-fernandezSymXEnergybasedSimulation2023a @sicklingerInterfaceJacobianbasedCoSimulation2014 focus more on the coupling side methodology using symbolic or numeric computation.\
 @trommeWeaklyFullyCoupled2016a
-@prescottRealTimeSimulationFlexible2016
 @inciSystemlevelCosimulationMechatronic
-@fernandez-fernandezSymXEnergybasedSimulation2023a
-@sicklingerInterfaceJacobianbasedCoSimulation2014
-@prescottRealTimeSimulationFlexible2016
 
+
+
+*incomplete *
